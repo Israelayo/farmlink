@@ -9,7 +9,7 @@ function ProductDetails() {
   const { cart, addToCart } = useContext(CartContext);
   const totalItems = cart.reduce((total, item) => total + item.cartQuantity, 0);
   useEffect(() => {
-    fetch(`http://localhost:5000/api/products/${id}`)
+    fetch(`${import.meta.env.VITE_API_URL}/api/products/${id}`)
       .then((response) => response.json())
       .then((data) => {
         setProduct(data);
@@ -23,7 +23,7 @@ function ProductDetails() {
     <div className="product-details-page">
       {product ? (
         <>
-          <Link to="/" className="back-link">
+          <Link to="/products" className="back-link">
             ← Back to products
           </Link>
 

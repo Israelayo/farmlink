@@ -1,16 +1,66 @@
-# React + Vite
+# FarmLink 🌱
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FarmLink is a full-stack agricultural marketplace that connects customers with local farms and their fresh products.
 
-Currently, two official plugins are available:
+Built as a learning and portfolio project to practice frontend-backend communication and full-stack development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Browse and search products
+- Filter products by category
+- View product details
+- Browse local farms and farm details
+- Add products to cart
+- Manage cart quantities
+- Responsive design
+- Login and checkout UI flow
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies
 
-## Expanding the ESLint configuration
+### Frontend
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- React Router
+- JavaScript
+- CSS
+
+### Backend
+
+- Node.js
+- Express.js
+- REST API
+- CORS
+
+## Project Structure
+
+```text
+farmLink/
+├── client/    # React frontend
+├── server/    # Express backend
+└── README.md
+```
+
+## Getting Started
+
+### Frontend
+
+```bash
+cd client
+npm install
+npm run dev
+```
+
+### Backend
+
+```bash
+cd server
+npm install
+npm start
+```
+
+The frontend communicates with the Express backend through the configured API URL.
+
+## Note
+
+FarmLink is a fictional project. Authentication and real payment processing are not implemented.

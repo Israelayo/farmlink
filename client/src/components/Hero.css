@@ -69,6 +69,7 @@
 .primary-button {
   background: #183b28;
   color: white;
+  text-decoration: none;
 }
 
 .primary-button:hover {
@@ -81,6 +82,7 @@
   background: transparent;
   color: #355440;
   border: 1px solid #ccd7c8;
+  text-decoration: none;
 }
 
 .secondary-button:hover {

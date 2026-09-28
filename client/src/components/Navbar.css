@@ -64,6 +64,7 @@
   transition:
     transform 0.25s ease,
     background 0.25s ease;
+  text-decoration: none;
 }
 
 .login-button:hover {

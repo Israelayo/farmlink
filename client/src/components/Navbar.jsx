@@ -25,17 +25,19 @@ function Navbar() {
 
       <div className={`nav-menu ${menuOpen ? "open" : ""}`}>
         <div className="nav-links">
-          <a href="/">Home</a>
-          <a href="/products">Products</a>
-          <a href="/farms">Farms</a>
-          <a href="/about">About</a>
+          <Link to="/">Home</Link>
+          <Link to="/products">Products</Link>
+          <Link to="/farms">Farms</Link>
+          <Link to="/about">About</Link>
         </div>
         <div className="nav-actions">
           <Link to="/cart" className="cart-count">
             🛒 {totalItems}
           </Link>
 
-          <button className="login-button">Login</button>
+          <Link to="/login" className="login-button">
+            Login
+          </Link>
         </div>
       </div>
     </nav>

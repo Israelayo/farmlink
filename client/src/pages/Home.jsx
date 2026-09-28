@@ -1,13 +1,15 @@
-import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-import ProductSection from "../components/ProductSection";
+import FeaturedProducts from "../components/FeaturedProducts";
+import FeaturedFarms from "../components/FeaturedFarms";
+import ClosingCTA from "../components/ClosingCTA";
 
 function Home() {
   return (
     <>
-      <Navbar />
       <Hero />
-      <ProductSection />
+      <FeaturedProducts />
+      <FeaturedFarms />
+      <ClosingCTA />
     </>
   );
 }

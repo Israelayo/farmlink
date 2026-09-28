@@ -1,4 +1,5 @@
 import "./Hero.css";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -17,9 +18,13 @@ function Hero() {
         </p>
 
         <div className="hero-actions">
-          <button className="primary-button">Explore products →</button>
+          <Link to="/products" className="primary-button">
+            Explore products
+          </Link>
 
-          <button className="secondary-button">Meet our farmers</button>
+          <Link to="/farms" className="secondary-button">
+            Meet our farmers
+          </Link>
         </div>
 
         <div className="hero-stats">
@@ -46,14 +51,14 @@ function Hero() {
             src="/images/hero-farm.jpg"
             alt="Fresh produce from a local farm"
           />
-          <a href="#products" className="floating-card">
+          <Link to="/products" className="floating-card">
             <span className="floating-card-icon">🥕</span>
 
             <div>
               <strong>Fresh carrots</strong>
               <small>From a local farm · Explore →</small>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

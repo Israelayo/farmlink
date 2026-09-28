@@ -9,7 +9,7 @@ function ProductSection() {
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/products")
+    fetch(`${import.meta.env.VITE_API_URL}/api/products`)
       .then((response) => response.json())
       .then((data) => {
         setProducts(data);
