@@ -8,9 +8,13 @@ function Navbar() {
   const { cart } = useContext(CartContext);
   const totalItems = cart.reduce((total, item) => total + item.cartQuantity, 0);
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <nav className="navbar">
-      <Link to="/" className="logo">
+      <Link to="/" className="logo" onClick={closeMenu}>
         <span className="logo-icon">🌱</span>
         FarmLink
       </Link>
@@ -25,17 +29,29 @@ function Navbar() {
 
       <div className={`nav-menu ${menuOpen ? "open" : ""}`}>
         <div className="nav-links">
-          <Link to="/">Home</Link>
-          <Link to="/products">Products</Link>
-          <Link to="/farms">Farms</Link>
-          <Link to="/about">About</Link>
+          <Link to="/" onClick={closeMenu}>
+            Home
+          </Link>
+
+          <Link to="/products" onClick={closeMenu}>
+            Products
+          </Link>
+
+          <Link to="/farms" onClick={closeMenu}>
+            Farms
+          </Link>
+
+          <Link to="/about" onClick={closeMenu}>
+            About
+          </Link>
         </div>
+
         <div className="nav-actions">
-          <Link to="/cart" className="cart-count">
+          <Link to="/cart" className="cart-count" onClick={closeMenu}>
             🛒 {totalItems}
           </Link>
 
-          <Link to="/login" className="login-button">
+          <Link to="/login" className="login-button" onClick={closeMenu}>
             Login
           </Link>
         </div>
