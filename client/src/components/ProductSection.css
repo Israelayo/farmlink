@@ -168,30 +168,9 @@
   }
 
   .category-filters {
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    padding-bottom: 5px;
-  }
-
-  .category-filters button {
-    flex-shrink: 0;
-  }
-}
-
-@media (max-width: 700px) {
-  .catalogue-controls {
-    align-items: stretch;
-    flex-direction: column;
-  }
-
-  .catalogue-controls input {
-    width: 100%;
-  }
-
-  .category-filters {
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    padding-bottom: 5px;
+    flex-wrap: wrap;
+    gap: 8px;
+    display: flex;
   }
 
   .category-filters button {
